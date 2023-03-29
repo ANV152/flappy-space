@@ -1,0 +1,39 @@
+\hypertarget{_actions_8hpp_source}{}\doxysection{Actions.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <functional>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }Flappy \{}
+\DoxyCodeLine{6     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1action}{action}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{private}:}
+\DoxyCodeLine{8         std::function< bool() > condition;}
+\DoxyCodeLine{9         std::function< void() > work;}
+\DoxyCodeLine{10     \textcolor{keyword}{public}:}
+\DoxyCodeLine{11         \mbox{\hyperlink{class_flappy_1_1action}{action}}() \{\}}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_flappy_1_1action}{action}}(}
+\DoxyCodeLine{13             std::function< \textcolor{keywordtype}{bool}() > condition,}
+\DoxyCodeLine{14             std::function< \textcolor{keywordtype}{void}() > work}
+\DoxyCodeLine{15         );}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \mbox{\hyperlink{class_flappy_1_1action}{action}}(}
+\DoxyCodeLine{18             sf::Keyboard::Key key,}
+\DoxyCodeLine{19             std::function< \textcolor{keywordtype}{void}() > work}
+\DoxyCodeLine{20         );}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         \mbox{\hyperlink{class_flappy_1_1action}{action}}(}
+\DoxyCodeLine{23             sf::Mouse::Button button,}
+\DoxyCodeLine{24             std::function< \textcolor{keywordtype}{void}() > work}
+\DoxyCodeLine{25         );}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_flappy_1_1action}{action}}(}
+\DoxyCodeLine{27             \textcolor{keywordtype}{bool} unconditional,}
+\DoxyCodeLine{28             std::function<\textcolor{keywordtype}{void}()> work}
+\DoxyCodeLine{29         );}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} operator()();}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \};}
+
+\end{DoxyCode}

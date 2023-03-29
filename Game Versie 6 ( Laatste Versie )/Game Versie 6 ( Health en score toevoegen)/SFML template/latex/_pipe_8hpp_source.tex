@@ -1,0 +1,35 @@
+\hypertarget{_pipe_8hpp_source}{}\doxysection{Pipe.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}DEFINITIONS.hpp"{}}}
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_pipe}{Pipe}}}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_flappy_1_1_pipe}{Pipe}}(GameDataRef data);}
+\DoxyCodeLine{13         \textcolor{keywordtype}{void} SpawnBottomPipe();}
+\DoxyCodeLine{14         \textcolor{keywordtype}{void} SpawnTopPipe();}
+\DoxyCodeLine{15         \textcolor{keywordtype}{void} SpawnInvisiblePipe();}
+\DoxyCodeLine{16         \textcolor{keywordtype}{void} SpawnScoringPipe();}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} MovePipes( \textcolor{keywordtype}{float} dt );}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} DrawPipes();}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} RandomisePipeOffset();}
+\DoxyCodeLine{20         \textcolor{keyword}{const} std::vector<sf::Sprite>\& GetSprites() \textcolor{keyword}{const};}
+\DoxyCodeLine{21         std::vector<sf::Sprite>\& GetScoringSprites();}
+\DoxyCodeLine{22     \textcolor{keyword}{private}:}
+\DoxyCodeLine{23         GameDataRef \_data;}
+\DoxyCodeLine{24         std::vector<sf::Sprite> pipeSprites;}
+\DoxyCodeLine{25         std::vector<sf::Sprite> scoringPipes;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} \_landHeight;}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} \_pipeSpawnYoffset;}
+\DoxyCodeLine{29     \};}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,77 @@
+\hypertarget{_game_state_8hpp_source}{}\doxysection{Game\+State.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Actions.hpp"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}State.hpp"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Pipe.hpp"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}land.hpp"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Bird.hpp"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Collision.hpp"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Flash.hpp"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}HUD.hpp"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}Gravity.hpp"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}Falling\_Asteroids.hpp"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}set\_of\_gas.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}Wapen.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}BulletArray.hpp"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_game_state}{GameState}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flappy_1_1_state}{State}}}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_flappy_1_1_game_state}{GameState}}(GameDataRef data);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} Init();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} HandleInput();}
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} Update(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} Draw(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{32         }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{private}:}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         GameDataRef \_data;}
+\DoxyCodeLine{39     }
+\DoxyCodeLine{40         sf::Sprite \_background;}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_flappy_1_1_pipe}{Pipe}} *pipe;}
+\DoxyCodeLine{42         \mbox{\hyperlink{class_flappy_1_1_land}{Land}}* land;}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_flappy_1_1_bird}{Bird}}* bird;}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_flappy_1_1_collision}{Collision}} collision;}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_flappy_1_1_flash}{Flash}}* flash;}
+\DoxyCodeLine{46         \mbox{\hyperlink{class_flappy_1_1_h_u_d}{HUD}}* hud;}
+\DoxyCodeLine{47         \mbox{\hyperlink{class_flappy_1_1_falling___asteroids}{Falling\_Asteroids}}* asteroids;}
+\DoxyCodeLine{48         \mbox{\hyperlink{class_flappy_1_1_falling___asteroids}{Falling\_Asteroids}}* asteroids\_2;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         \mbox{\hyperlink{class_flappy_1_1_bullet___array}{Bullet\_Array}}* bullets;}
+\DoxyCodeLine{51         \mbox{\hyperlink{class_flappy_1_1_gasoline}{Gasoline}} *gasoline;}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_flappy_1_1_wapen}{Wapen}} *wapen;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         sf::Clock clock\_1;}
+\DoxyCodeLine{55         sf::Clock clock\_2;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{keywordtype}{int} \_gameState;}
+\DoxyCodeLine{58         sf::RectangleShape \_gameOverFlash;}
+\DoxyCodeLine{59         \textcolor{keywordtype}{bool} \_flashOn;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61         \textcolor{keywordtype}{int} \_score;}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         sf::SoundBuffer \_Hit\_sound\_buffer;}
+\DoxyCodeLine{64         sf::SoundBuffer \_Point\_sound\_buffer;}
+\DoxyCodeLine{65     }
+\DoxyCodeLine{66         sf::SoundBuffer \_Hit\_bird\_sound\_buffer;}
+\DoxyCodeLine{67         sf::Sound \_Hit\_bird\_sound;}
+\DoxyCodeLine{68         }
+\DoxyCodeLine{69         sf::Sound \_Hit\_sound;}
+\DoxyCodeLine{70         sf::Sound \_Point\_Sound;}
+\DoxyCodeLine{71     \};}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}

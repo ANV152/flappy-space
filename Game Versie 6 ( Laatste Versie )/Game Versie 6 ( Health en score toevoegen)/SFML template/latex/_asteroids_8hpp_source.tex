@@ -1,0 +1,45 @@
+\hypertarget{_asteroids_8hpp_source}{}\doxysection{Asteroids.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}DEFINITIONS.hpp"{}}}
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}}}
+\DoxyCodeLine{11     \{}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}}(GameDataRef data);}
+\DoxyCodeLine{14         \textcolor{keywordtype}{void} SpawnAsteroid();}
+\DoxyCodeLine{15         }
+\DoxyCodeLine{16         \textcolor{keywordtype}{void} MoveAsteroids(\textcolor{keywordtype}{float} dt, \textcolor{keywordtype}{float} land);}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} DrawAsteroids();}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} RandomiseAsteroidOffset();}
+\DoxyCodeLine{19         sf::Sprite \& GetSprite() ;}
+\DoxyCodeLine{20         sf::Sprite\& Get\_FireSprite();}
+\DoxyCodeLine{21         sf::Sprite\& Get\_Explosion\_Sprite();}
+\DoxyCodeLine{22         \textcolor{comment}{//std::vector<sf::Sprite>\& GetScoringSprites();}}
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} \_asteroid\_state;}
+\DoxyCodeLine{24         }
+\DoxyCodeLine{25     \textcolor{keyword}{protected}: \textcolor{comment}{// Protected gemaakt omdat anders moet je voor elke waarden een aparte get maken en heeft niet zoveel nut want alleen de asteroid versions gebruikt deze.}}
+\DoxyCodeLine{26         \textcolor{comment}{// Verschillende asteroid versie erven over van asteroid dus protected om deze waardes voor verschillende asteroids aan te kunnen passen.}}
+\DoxyCodeLine{27         sf::Sprite asteroid\_Sprite;}
+\DoxyCodeLine{28         \textcolor{comment}{/*std::vector<sf::Sprite> scoringPipes;*/}}
+\DoxyCodeLine{29         sf::Sprite fire\_Sprite;}
+\DoxyCodeLine{30         sf::Sprite explosion\_Sprite;}
+\DoxyCodeLine{31         }
+\DoxyCodeLine{32         \textcolor{keywordtype}{float} acceleration\_y;}
+\DoxyCodeLine{33         sf::Vector2f vel;}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} \_landHeight;}
+\DoxyCodeLine{35         \textcolor{keywordtype}{int} \_asteroidSpawnXoffset;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keyword}{private}:}
+\DoxyCodeLine{38         GameDataRef \_data;}
+\DoxyCodeLine{39     \};}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,60 @@
+\hypertarget{_bird_8hpp_source}{}\doxysection{Bird.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Gravity.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Actions.hpp"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Land.hpp"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}DEFINITIONS.hpp"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_bird}{Bird}}}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_flappy_1_1_bird}{Bird}}(GameDataRef data, sf::Vector2f vel);}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_flappy_1_1_bird}{\string~Bird}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} Draw();}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} Animate(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} change\_y\_acceleration(\textcolor{keywordtype}{float} force);}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} Boost();}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} Update(\textcolor{keywordtype}{float} dt, \textcolor{keywordtype}{float} land);}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} Tap();}
+\DoxyCodeLine{25         sf::Sprite \_boostSprite;}
+\DoxyCodeLine{26         \textcolor{keyword}{const} sf::Sprite\& GetSprite() \textcolor{keyword}{const};}
+\DoxyCodeLine{27         }
+\DoxyCodeLine{28     \textcolor{keyword}{private}:}
+\DoxyCodeLine{29         GameDataRef \_data;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         sf::Sprite \_birdSprite;}
+\DoxyCodeLine{32         }
+\DoxyCodeLine{33         std::vector<sf::Texture> \_animationFrames;}
+\DoxyCodeLine{34     }
+\DoxyCodeLine{35         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_animationIterator;}
+\DoxyCodeLine{36         sf::Clock \_clock;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         sf::Clock \_movementClock;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{keywordtype}{int} \_birdState;}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         \textcolor{comment}{//Physics}}
+\DoxyCodeLine{43         \textcolor{keywordtype}{float} jet\_force;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         \textcolor{keywordtype}{float} distance\_y;}
+\DoxyCodeLine{46         \textcolor{keywordtype}{float} acceleration\_y;}
+\DoxyCodeLine{47         \textcolor{keywordtype}{float} acceleration\_x;}
+\DoxyCodeLine{48         sf::Vector2f vel;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \};}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}

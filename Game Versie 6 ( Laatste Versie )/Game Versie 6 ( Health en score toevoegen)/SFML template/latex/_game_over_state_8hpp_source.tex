@@ -1,0 +1,40 @@
+\hypertarget{_game_over_state_8hpp_source}{}\doxysection{Game\+Over\+State.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}State.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Actions.hpp"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_game_over_state}{GameOverState}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flappy_1_1_state}{State}}}
+\DoxyCodeLine{11     \{}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13         \mbox{\hyperlink{class_flappy_1_1_game_over_state}{GameOverState}}(GameDataRef data, \textcolor{keywordtype}{int} score);}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15         \textcolor{keywordtype}{void} Init();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} HandleInput();}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} Update(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} Draw(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{private}:}
+\DoxyCodeLine{22         GameDataRef \_data;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         sf::Sprite \_background;}
+\DoxyCodeLine{25         sf::Sprite \_title;}
+\DoxyCodeLine{26         sf::Sprite \_GameOver\_Container;}
+\DoxyCodeLine{27         sf::Sprite \_play\_again\_Button;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         sf::Text \_scoreText;}
+\DoxyCodeLine{30         sf::Text \_highScoreText;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} \_score;}
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} \_highScore;}
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}

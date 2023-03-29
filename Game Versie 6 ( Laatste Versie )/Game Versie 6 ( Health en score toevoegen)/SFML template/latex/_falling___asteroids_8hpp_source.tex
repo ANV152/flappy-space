@@ -1,0 +1,39 @@
+\hypertarget{_falling___asteroids_8hpp_source}{}\doxysection{Falling\+\_\+\+Asteroids.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}AsteroidVersions.hpp"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_falling___asteroids}{Falling\_Asteroids}} }
+\DoxyCodeLine{8     \{}
+\DoxyCodeLine{9     \textcolor{keyword}{private}:}
+\DoxyCodeLine{10         }
+\DoxyCodeLine{11         GameDataRef \_data;}
+\DoxyCodeLine{12         std::vector<Asteroid> asteroids;}
+\DoxyCodeLine{13         std::vector<std::string> asteroidNames;}
+\DoxyCodeLine{14         \textcolor{keywordtype}{int} \_asteroidSpawnXoffset;}
+\DoxyCodeLine{15         \textcolor{keywordtype}{int} Screen\_section;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         sf::Clock clock;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         }
+\DoxyCodeLine{20         }
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \mbox{\hyperlink{class_flappy_1_1_falling___asteroids}{Falling\_Asteroids}}(GameDataRef data, \textcolor{keywordtype}{int} Screen\_section );}
+\DoxyCodeLine{24         \textcolor{keywordtype}{int}  asteroidSpawnXoffset();}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} SpawnAsteroids();}
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} DestroyAsteroid( \textcolor{keywordtype}{int} index );}
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} Throw\_Asteroid(\textcolor{keywordtype}{float} dt, \textcolor{keywordtype}{float} land);}
+\DoxyCodeLine{28         std::vector<Asteroid> Get\_Sprites();}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} Draw\_Asteroids();}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}} asteroidFactory( std::string asteroidName );}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         }
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}

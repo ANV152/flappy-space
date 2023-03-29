@@ -1,0 +1,38 @@
+\hypertarget{_wapen_8hpp_source}{}\doxysection{Wapen.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Bird.hpp"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}DEFINITIONS.hpp"{}}}
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_wapen}{Wapen}}}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         \textcolor{keyword}{private}:}
+\DoxyCodeLine{12             GameDataRef \_data;}
+\DoxyCodeLine{13             \textcolor{keywordtype}{bool} weapon\_state;}
+\DoxyCodeLine{14             sf::Sprite wapen;}
+\DoxyCodeLine{15             sf::Mouse mouse;}
+\DoxyCodeLine{16             \textcolor{keywordtype}{bool} flip;}
+\DoxyCodeLine{17             \textcolor{keywordtype}{float} vel\_x;}
+\DoxyCodeLine{18         }
+\DoxyCodeLine{19         \textcolor{keyword}{public}:}
+\DoxyCodeLine{20             \mbox{\hyperlink{class_flappy_1_1_wapen}{Wapen}}(GameDataRef \_data ,  \textcolor{keywordtype}{bool} weapon\_state);}
+\DoxyCodeLine{21             \mbox{\hyperlink{class_flappy_1_1_wapen}{\string~Wapen}}();}
+\DoxyCodeLine{22             \textcolor{keywordtype}{float} get\_degrees\_from\_sprite();}
+\DoxyCodeLine{23             \textcolor{comment}{// void rotate\_wapen(float degrees);}}
+\DoxyCodeLine{24             \textcolor{keywordtype}{void} Update( \textcolor{keywordtype}{float} dt, \mbox{\hyperlink{class_flappy_1_1_bird}{Bird}} *b);}
+\DoxyCodeLine{25             \textcolor{keywordtype}{void} Draw();}
+\DoxyCodeLine{26             \textcolor{keywordtype}{bool} Get\_wapen\_state();}
+\DoxyCodeLine{27             \textcolor{keywordtype}{bool} Get\_wapen\_flip();}
+\DoxyCodeLine{28             \textcolor{keywordtype}{void} Set\_wapen\_on();}
+\DoxyCodeLine{29             sf::Sprite getSprite();}
+\DoxyCodeLine{30             sf::Vector2f getWapenPosition();}
+\DoxyCodeLine{31             }
+\DoxyCodeLine{32     \};}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}

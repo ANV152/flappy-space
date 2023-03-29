@@ -1,0 +1,37 @@
+\hypertarget{_explosion_8hpp_source}{}\doxysection{Explosion.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <SFML/Graphics.HPP>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Asteroids.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }Flappy \{}
+\DoxyCodeLine{6     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_explosion}{Explosion}}}
+\DoxyCodeLine{7     \{}
+\DoxyCodeLine{8     \textcolor{keyword}{public}:}
+\DoxyCodeLine{9         \mbox{\hyperlink{class_flappy_1_1_explosion}{Explosion}}(GameDataRef \_data);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     \textcolor{keyword}{private}:}
+\DoxyCodeLine{12         GameDataRef \_data;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         sf::Sprite \_birdSprite;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         std::vector<sf::Texture> \_animationFrames;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_animationIterator;}
+\DoxyCodeLine{19         sf::Clock \_clock;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         sf::Clock \_movementClock;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         \textcolor{keywordtype}{int} \_birdState;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{comment}{//Physics}}
+\DoxyCodeLine{26         \textcolor{keywordtype}{float} distance\_y;}
+\DoxyCodeLine{27         \textcolor{keywordtype}{float} acceleration\_y;}
+\DoxyCodeLine{28         \textcolor{keywordtype}{float} acceleration\_x;}
+\DoxyCodeLine{29         sf::Vector2f vel;}
+\DoxyCodeLine{30     \};}
+\DoxyCodeLine{31 \}}
+\DoxyCodeLine{32 }
+
+\end{DoxyCode}

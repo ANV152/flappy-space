@@ -1,0 +1,88 @@
+\hypertarget{_asteroid_versions_8hpp_source}{}\doxysection{Asteroid\+Versions.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ENEMIES\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ENEMIES\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Asteroids.hpp"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }Flappy\{}
+\DoxyCodeLine{10     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_asteroid1}{Asteroid1}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}} \{}
+\DoxyCodeLine{11         \textcolor{keyword}{private}:}
+\DoxyCodeLine{12             \textcolor{keywordtype}{int} health = 1;}
+\DoxyCodeLine{13             GameDataRef \_data;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15         \textcolor{keyword}{public}:}
+\DoxyCodeLine{16             \mbox{\hyperlink{class_flappy_1_1_asteroid1}{Asteroid1}}( GameDataRef \_data ) :}
+\DoxyCodeLine{17                 \mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}}( \_data ),}
+\DoxyCodeLine{18                 \_data( \_data )}
+\DoxyCodeLine{19             \{}
+\DoxyCodeLine{20                 vel = sf::Vector2f\{ 3.0,0.0 \};}
+\DoxyCodeLine{21                 \_asteroidSpawnXoffset = 0;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23                 \textcolor{comment}{// Textures worden nu dus meegegeven en in aparte cpp worden verschillende asteroids gemaakt waaruit gekozen kan worden.}}
+\DoxyCodeLine{24                 \textcolor{comment}{// Dit gaat dus weg uit deze constructor en wordt in de constructor van de kleinere verschillende asteroid subklassen gedaan.}}
+\DoxyCodeLine{25                 asteroid\_Sprite.setTexture(\_data-\/>assets.GetTexture(\textcolor{stringliteral}{"{}Asteroid1"{}}));}
+\DoxyCodeLine{26                 asteroid\_Sprite.setScale(0.25, 0.25);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28                 fire\_Sprite.setTexture(\_data-\/>assets.GetTexture(\textcolor{stringliteral}{"{}Asteroid Fire"{}}));}
+\DoxyCodeLine{29                 fire\_Sprite.setScale(0.25, 0.25);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31                 explosion\_Sprite.setTexture(\_data-\/>assets.GetTexture(\textcolor{stringliteral}{"{}Explosion"{}}));}
+\DoxyCodeLine{32                 explosion\_Sprite.setScale(0.25, 0.25);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34                 \_asteroid\_state = ASTEROID\_STATE\_NORMAL;}
+\DoxyCodeLine{35             \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37             \textcolor{keywordtype}{int} returnHealth() \{}
+\DoxyCodeLine{38                 \textcolor{keywordflow}{return} health;}
+\DoxyCodeLine{39             \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41             \textcolor{keywordtype}{void} test() \{}
+\DoxyCodeLine{42                 std::cout << \textcolor{stringliteral}{"{}boop"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{43             \}}
+\DoxyCodeLine{44     \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_asteroid2}{Asteroid2}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}} \{}
+\DoxyCodeLine{47         \textcolor{keyword}{private}:}
+\DoxyCodeLine{48             \textcolor{keywordtype}{int} health = 2;}
+\DoxyCodeLine{49             GameDataRef \_data;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keyword}{public}:}
+\DoxyCodeLine{52             \mbox{\hyperlink{class_flappy_1_1_asteroid2}{Asteroid2}}( GameDataRef \_data ) :}
+\DoxyCodeLine{53                 \mbox{\hyperlink{class_flappy_1_1_asteroid}{Asteroid}}( \_data ),}
+\DoxyCodeLine{54                 \_data( \_data )}
+\DoxyCodeLine{55             \{}
+\DoxyCodeLine{56                 vel = sf::Vector2f\{ 3.0,0.0 \};}
+\DoxyCodeLine{57                 \_asteroidSpawnXoffset = 0;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59                 \textcolor{comment}{// Textures worden nu dus meegegeven en in aparte cpp worden verschillende asteroids gemaakt waaruit gekozen kan worden.}}
+\DoxyCodeLine{60                 \textcolor{comment}{// Dit gaat dus weg uit deze constructor en wordt in de constructor van de kleinere verschillende asteroid subklassen gedaan.}}
+\DoxyCodeLine{61                 asteroid\_Sprite.setTexture(\_data-\/>assets.GetTexture(\textcolor{stringliteral}{"{}Asteroid2"{}}));}
+\DoxyCodeLine{62                 asteroid\_Sprite.setScale(0.4, 0.4);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64                 fire\_Sprite.setTexture(\_data-\/>assets.GetTexture(\textcolor{stringliteral}{"{}Asteroid Fire"{}}));}
+\DoxyCodeLine{65                 fire\_Sprite.setScale(0.4, 0.4);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67                 explosion\_Sprite.setTexture(\_data-\/>assets.GetTexture(\textcolor{stringliteral}{"{}Explosion"{}}));}
+\DoxyCodeLine{68                 explosion\_Sprite.setScale(0.4, 0.4);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70                 \_asteroid\_state = ASTEROID\_STATE\_NORMAL;}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73             \textcolor{keywordtype}{int} returnHealth() \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{return} health;}
+\DoxyCodeLine{75             \}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77             \textcolor{keywordtype}{void} test() \{}
+\DoxyCodeLine{78                 std::cout << \textcolor{stringliteral}{"{}boop"{}} << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80     \};}
+\DoxyCodeLine{81 \}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,29 @@
+\hypertarget{_asset_manager_8hpp_source}{}\doxysection{Asset\+Manager.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_asset_manager}{AssetManager}}}
+\DoxyCodeLine{9     \{}
+\DoxyCodeLine{10     \textcolor{keyword}{public}:}
+\DoxyCodeLine{11         \mbox{\hyperlink{class_flappy_1_1_asset_manager}{AssetManager}}() \{ \}}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_flappy_1_1_asset_manager}{\string~AssetManager}}() \{ \}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{keywordtype}{void} LoadTexture(std::string name, std::string fileName);}
+\DoxyCodeLine{15         sf::Texture \&GetTexture(std::string name);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} LoadFont(std::string name, std::string fileName);}
+\DoxyCodeLine{18         sf::Font \&GetFont(std::string name);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{private}:}
+\DoxyCodeLine{21         std::map<std::string, sf::Texture> \_textures;}
+\DoxyCodeLine{22         std::map<std::string, sf::Font> \_fonts;}
+\DoxyCodeLine{23     \};}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}

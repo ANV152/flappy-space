@@ -1,0 +1,35 @@
+\hypertarget{_bullet_array_8hpp_source}{}\doxysection{Bullet\+Array.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Bullet.hpp"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Wapen.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_bullet___array}{Bullet\_Array}}}
+\DoxyCodeLine{9     \{}
+\DoxyCodeLine{10     \textcolor{keyword}{private}:}
+\DoxyCodeLine{11         GameDataRef \_data;}
+\DoxyCodeLine{12         std::vector<Bullet> bullets;}
+\DoxyCodeLine{13         sf::Clock clock;}
+\DoxyCodeLine{14         \textcolor{keywordtype}{int} magazineSize = 8;}
+\DoxyCodeLine{15         \textcolor{keywordtype}{float} reloadSpeed = 0.1;}
+\DoxyCodeLine{16         }
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \mbox{\hyperlink{class_flappy_1_1_bullet___array}{Bullet\_Array}}(GameDataRef data );}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} SpawnBullet( \mbox{\hyperlink{class_flappy_1_1_wapen}{Wapen}} *weapon );}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} DestroyBullet( \textcolor{keywordtype}{int} index );}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} MoveBullets();}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} Draw\_Bullets();}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} checkOffScreen();}
+\DoxyCodeLine{25         std::vector<Bullet> Get\_Sprites();}
+\DoxyCodeLine{26         \textcolor{comment}{// Asteroid bulletFactory( std::string asteroidName );}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         }
+\DoxyCodeLine{29     \};}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}

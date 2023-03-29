@@ -1,0 +1,33 @@
+\hypertarget{_main_menu_state_8hpp_source}{}\doxysection{Main\+Menu\+State.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}State.hpp"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Game.hpp"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }Flappy}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keyword}{class }\mbox{\hyperlink{class_flappy_1_1_main_menu_state}{MainMenuState}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flappy_1_1_state}{State}}}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_flappy_1_1_main_menu_state}{MainMenuState}}(GameDataRef data);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         \textcolor{keywordtype}{void} Init();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \textcolor{keywordtype}{void} HandleInput();}
+\DoxyCodeLine{17         \textcolor{keywordtype}{void} Update(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} Draw(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keyword}{private}:}
+\DoxyCodeLine{21         GameDataRef \_data;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         sf::Sprite \_background;}
+\DoxyCodeLine{24         sf::Sprite \_title;}
+\DoxyCodeLine{25         sf::Sprite \_playButton;}
+\DoxyCodeLine{26         sf::Sprite \_subtitle;}
+\DoxyCodeLine{27     \};}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
